@@ -1,4 +1,4 @@
-import json
+
 import requests
 
 def convertir_tiempo (dt_a_convertir):
@@ -15,6 +15,7 @@ def convertir_tiempo (dt_a_convertir):
 
 
 def extraer_sunrise_sunset(cadena_json):
+    import json
     try:
         datos = json.loads(cadena_json)  # Parsea la cadena JSON
         sunrise = datos["current"]["sunrise"]
